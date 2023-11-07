@@ -1,1 +1,1 @@
-export const IMG_URL = "/portfolio/public/media";
+export const IMG_URL = "../public/media";
