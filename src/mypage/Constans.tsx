@@ -1,1 +1,1 @@
-export const IMG_URL = "./media";
+export const IMG_URL = "/build/media";
