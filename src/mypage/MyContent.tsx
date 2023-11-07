@@ -1,22 +1,8 @@
-import { Card, Col, Divider, Flex, Row, Space, Typography } from "antd";
+import { Card, Col, Divider, Row, Space, Typography } from "antd";
 import { CSSProperties } from "react";
-import aws from "../image/aws.png";
-import css from "../image/css.png";
-import github from "../image/github.png";
-import html from "../image/html.png";
-import java from "../image/java.png";
-import js from "../image/js.png";
-import nestjs from "../image/nestjs.svg";
-import nodejs from "../image/nodejs.png";
-import oracle from "../image/oracle.png";
-import react from "../image/react.png";
-import redux2 from "../image/redux.svg";
-import springBoot from "../image/spring boot.png";
-import spring from "../image/spring.png";
-import ts from "../image/ts.png";
-import { Questor } from "./Questor";
 import { BoardHub } from "./BoardHub";
-import docker from "../image/docker.png";
+import { Questor } from "./Questor";
+import { IMG_URL } from "./Constans";
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -80,78 +66,9 @@ export function MyContent() {
                                     hoverable
                                     style={cardStyle}
                                     bodyStyle={{ display: "none" }}
-                                    cover={<img src={java} style={imgStyle} />}
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={<img src={css} style={imgStyle} />}
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={<img src={html} style={imgStyle} />}
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={<img src={js} style={imgStyle} />}
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={<img src={ts} style={imgStyle} />}
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img src={oracle} style={imgStyle} />
-                                    }
-                                />
-                            </Space>
-                            <Space
-                                style={{
-                                    backgroundColor: "#e7e6e6",
-                                    padding: 10,
-                                }}
-                            >
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img src={nodejs} style={imgStyle} />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img src={nestjs} style={imgStyle} />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img src={spring} style={imgStyle} />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
                                     cover={
                                         <img
-                                            src={springBoot}
+                                            src={`${IMG_URL}/java.png`}
                                             style={imgStyle}
                                         />
                                     }
@@ -160,14 +77,55 @@ export function MyContent() {
                                     hoverable
                                     style={cardStyle}
                                     bodyStyle={{ display: "none" }}
-                                    cover={<img src={react} style={imgStyle} />}
+                                    cover={
+                                        <img
+                                            src={`${IMG_URL}/css.png`}
+                                            style={imgStyle}
+                                        />
+                                    }
                                 />
                                 <Card
                                     hoverable
                                     style={cardStyle}
                                     bodyStyle={{ display: "none" }}
                                     cover={
-                                        <img src={redux2} style={imgStyle} />
+                                        <img
+                                            src={`${IMG_URL}/html.png`}
+                                            style={imgStyle}
+                                        />
+                                    }
+                                />
+                                <Card
+                                    hoverable
+                                    style={cardStyle}
+                                    bodyStyle={{ display: "none" }}
+                                    cover={
+                                        <img
+                                            src={`${IMG_URL}/js.png`}
+                                            style={imgStyle}
+                                        />
+                                    }
+                                />
+                                <Card
+                                    hoverable
+                                    style={cardStyle}
+                                    bodyStyle={{ display: "none" }}
+                                    cover={
+                                        <img
+                                            src={`${IMG_URL}/ts.png`}
+                                            style={imgStyle}
+                                        />
+                                    }
+                                />
+                                <Card
+                                    hoverable
+                                    style={cardStyle}
+                                    bodyStyle={{ display: "none" }}
+                                    cover={
+                                        <img
+                                            src={`${IMG_URL}/oracle.png`}
+                                            style={imgStyle}
+                                        />
                                     }
                                 />
                             </Space>
@@ -181,14 +139,11 @@ export function MyContent() {
                                     hoverable
                                     style={cardStyle}
                                     bodyStyle={{ display: "none" }}
-                                    cover={<img src={aws} style={imgStyle} />}
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
                                     cover={
-                                        <img src={github} style={imgStyle} />
+                                        <img
+                                            src={`${IMG_URL}/nodejs.png`}
+                                            style={imgStyle}
+                                        />
                                     }
                                 />
                                 <Card
@@ -196,7 +151,94 @@ export function MyContent() {
                                     style={cardStyle}
                                     bodyStyle={{ display: "none" }}
                                     cover={
-                                        <img src={docker} style={imgStyle} />
+                                        <img
+                                            src={`${IMG_URL}/nestjs.svg`}
+                                            style={imgStyle}
+                                        />
+                                    }
+                                />
+                                <Card
+                                    hoverable
+                                    style={cardStyle}
+                                    bodyStyle={{ display: "none" }}
+                                    cover={
+                                        <img
+                                            src={`${IMG_URL}/spring.png`}
+                                            style={imgStyle}
+                                        />
+                                    }
+                                />
+                                <Card
+                                    hoverable
+                                    style={cardStyle}
+                                    bodyStyle={{ display: "none" }}
+                                    cover={
+                                        <img
+                                            src={`${IMG_URL}/spring-boot.png`}
+                                            style={imgStyle}
+                                        />
+                                    }
+                                />
+                                <Card
+                                    hoverable
+                                    style={cardStyle}
+                                    bodyStyle={{ display: "none" }}
+                                    cover={
+                                        <img
+                                            src={`${IMG_URL}/react.png`}
+                                            style={imgStyle}
+                                        />
+                                    }
+                                />
+                                <Card
+                                    hoverable
+                                    style={cardStyle}
+                                    bodyStyle={{ display: "none" }}
+                                    cover={
+                                        <img
+                                            src={`${IMG_URL}/redux.svg`}
+                                            style={imgStyle}
+                                        />
+                                    }
+                                />
+                            </Space>
+                            <Space
+                                style={{
+                                    backgroundColor: "#e7e6e6",
+                                    padding: 10,
+                                }}
+                            >
+                                <Card
+                                    hoverable
+                                    style={cardStyle}
+                                    bodyStyle={{ display: "none" }}
+                                    cover={
+                                        <img
+                                            src={`${IMG_URL}/aws.png`}
+                                            style={imgStyle}
+                                        />
+                                    }
+                                />
+                                <Card
+                                    hoverable
+                                    style={cardStyle}
+                                    bodyStyle={{ display: "none" }}
+                                    cover={
+                                        <img
+                                            src={`${IMG_URL}/github.png`}
+                                            style={imgStyle}
+                                        />
+                                    }
+                                />
+                                <Card
+                                    hoverable
+                                    style={cardStyle}
+                                    bodyStyle={{ display: "none" }}
+                                    cover={
+                                        <img
+                                            src={`${IMG_URL}/docker.png`}
+                                            style={imgStyle}
+                                        />
                                     }
                                 />
                             </Space>

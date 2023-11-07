@@ -1,12 +1,5 @@
-import { Avatar, Card, Flex, Image, Row, Space, Typography, Col } from "antd";
-import github from "../image/github.png";
-import nestjs from "../image/nestjs.svg";
-import questor from "../image/questor.png";
-import react from "../image/react.png";
-import redux2 from "../image/redux.svg";
-import ts from "../image/ts.png";
-import dynamodb from "../image/aws_dynamodb.png";
-import ec2 from "../image/aws_ec2.png";
+import { Avatar, Card, Flex, Image, Space, Typography } from "antd";
+import { IMG_URL } from "./Constans";
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -25,7 +18,7 @@ export function Questor() {
                                 style={{ marginTop: 10 }}
                             >
                                 <Image
-                                    src={questor}
+                                    src={`${IMG_URL}/questor.png`}
                                     preview={false}
                                     style={{
                                         padding: 3,
@@ -66,12 +59,36 @@ export function Questor() {
                                 padding: 3,
                             }}
                         >
-                            <Image src={ts} preview={false} width={50} />
-                            <Image src={react} preview={false} width={50} />
-                            <Image src={redux2} preview={false} width={50} />
-                            <Image src={nestjs} preview={false} width={50} />
-                            <Image src={dynamodb} preview={false} width={50} />
-                            <Image src={ec2} preview={false} width={50} />
+                            <Image
+                                src={`${IMG_URL}/ts.png`}
+                                preview={false}
+                                width={50}
+                            />
+                            <Image
+                                src={`${IMG_URL}/react.png`}
+                                preview={false}
+                                width={50}
+                            />
+                            <Image
+                                src={`${IMG_URL}/redux.svg`}
+                                preview={false}
+                                width={50}
+                            />
+                            <Image
+                                src={`${IMG_URL}/nestjs.svg`}
+                                preview={false}
+                                width={50}
+                            />
+                            <Image
+                                src={`${IMG_URL}/aws_dynamodb.png`}
+                                preview={false}
+                                width={50}
+                            />
+                            <Image
+                                src={`${IMG_URL}/aws_ec2.png`}
+                                preview={false}
+                                width={50}
+                            />
                         </Space>
                         <Space>
                             <a href="http://3.39.23.102:8080/login">
@@ -88,7 +105,7 @@ export function Questor() {
                             </a>
                             <a href="https://github.com/sariys333/questor">
                                 <Image
-                                    src={github}
+                                    src={`${IMG_URL}/github.png`}
                                     preview={false}
                                     width={50}
                                 />

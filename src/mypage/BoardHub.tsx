@@ -1,13 +1,5 @@
 import { Avatar, Card, Divider, Flex, Image, Space, Typography } from "antd";
-import ec2 from "../image/aws_ec2.png";
-import docker from "../image/docker.png";
-import gamelist from "../image/gamelist.gif";
-import github from "../image/github.png";
-import java from "../image/java.png";
-import nodejs from "../image/nodejs.png";
-import oracle from "../image/oracle2.png";
-import react from "../image/react.png";
-import springBoot from "../image/spring boot.png";
+import { IMG_URL } from "./Constans";
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -26,7 +18,7 @@ export function BoardHub() {
                                 style={{ marginTop: 10 }}
                             >
                                 <Image
-                                    src={gamelist}
+                                    src={`${IMG_URL}/gamelist.gif`}
                                     preview={false}
                                     style={{
                                         padding: 3,
@@ -72,17 +64,41 @@ export function BoardHub() {
                                 padding: 3,
                             }}
                         >
-                            <Image src={java} preview={false} width={50} />
                             <Image
-                                src={springBoot}
+                                src={`${IMG_URL}/java.png`}
                                 preview={false}
                                 width={50}
                             />
-                            <Image src={oracle} preview={false} width={50} />
-                            <Image src={nodejs} preview={false} width={50} />
-                            <Image src={react} preview={false} width={50} />
-                            <Image src={ec2} preview={false} width={50} />
-                            <Image src={docker} preview={false} width={50} />
+                            <Image
+                                src={`${IMG_URL}/spring-boot.png`}
+                                preview={false}
+                                width={50}
+                            />
+                            <Image
+                                src={`${IMG_URL}/oracle.png`}
+                                preview={false}
+                                width={50}
+                            />
+                            <Image
+                                src={`${IMG_URL}/nodejs.png`}
+                                preview={false}
+                                width={50}
+                            />
+                            <Image
+                                src={`${IMG_URL}/react.png`}
+                                preview={false}
+                                width={50}
+                            />
+                            <Image
+                                src={`${IMG_URL}/aws_ec2.png`}
+                                preview={false}
+                                width={50}
+                            />
+                            <Image
+                                src={`${IMG_URL}/docker.png`}
+                                preview={false}
+                                width={50}
+                            />
                         </Space>
                         <Space>
                             <a>
@@ -99,7 +115,7 @@ export function BoardHub() {
                             </a>
                             <a href="https://github.com/CodeName4885/BoardHub">
                                 <Image
-                                    src={github}
+                                    src={`${IMG_URL}/github.png`}
                                     preview={false}
                                     width={50}
                                 />
