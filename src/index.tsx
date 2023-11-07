@@ -11,11 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <React.StrictMode>
-        <ConfigProvider
-            theme={{
-                components: {},
-            }}
-        >
+        <ConfigProvider>
             <MyPage />
         </ConfigProvider>
     </React.StrictMode>
