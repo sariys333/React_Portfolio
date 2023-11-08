@@ -1,9 +1,19 @@
 import { Avatar, Card, Divider, Flex, Image, Space, Typography } from "antd";
 import { IMG_URL } from "./Constans";
 
-const { Title, Text, Paragraph } = Typography;
+const { Title, Paragraph } = Typography;
 
 export function BoardHub() {
+    const imgName: string[] = [
+        "java.png",
+        "spring-boot.png",
+        "oracle.png",
+        "nodejs.png",
+        "react.png",
+        "aws_ec2.png",
+        "docker.png",
+    ];
+
     return (
         <div style={{ marginBottom: 20 }}>
             <Flex justify="center">
@@ -64,41 +74,13 @@ export function BoardHub() {
                                 padding: 3,
                             }}
                         >
-                            <Image
-                                src={`${IMG_URL}/java.png`}
-                                preview={false}
-                                width={50}
-                            />
-                            <Image
-                                src={`${IMG_URL}/spring-boot.png`}
-                                preview={false}
-                                width={50}
-                            />
-                            <Image
-                                src={`${IMG_URL}/oracle.png`}
-                                preview={false}
-                                width={50}
-                            />
-                            <Image
-                                src={`${IMG_URL}/nodejs.png`}
-                                preview={false}
-                                width={50}
-                            />
-                            <Image
-                                src={`${IMG_URL}/react.png`}
-                                preview={false}
-                                width={50}
-                            />
-                            <Image
-                                src={`${IMG_URL}/aws_ec2.png`}
-                                preview={false}
-                                width={50}
-                            />
-                            <Image
-                                src={`${IMG_URL}/docker.png`}
-                                preview={false}
-                                width={50}
-                            />
+                            {imgName.map((name: string) => (
+                                <Image
+                                    src={`${IMG_URL}/${name}`}
+                                    preview={false}
+                                    width={50}
+                                />
+                            ))}
                         </Space>
                         <Space>
                             <a>

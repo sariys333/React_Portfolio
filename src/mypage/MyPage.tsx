@@ -1,6 +1,6 @@
-import { Divider, Layout, Space, Typography, message } from "antd";
-import { MyContent } from "./MyContent";
+import { Divider, Flex, Layout, Typography, message } from "antd";
 import CopyToClipboard from "react-copy-to-clipboard";
+import { MyContent } from "./MyContent";
 
 const { Content, Footer, Header } = Layout;
 const { Title } = Typography;
@@ -14,16 +14,19 @@ export function MyPage() {
         messageApi.open({
             type: "success",
             content: "클립보드에 복사되었습니다.",
-            style: {
-                // marginTop: "50vh",
-            },
         });
     };
 
     return (
         <>
             <Layout>
-                <Header></Header>
+                <Header style={{ height: 100 }}>
+                    <Flex justify="center" align="center">
+                        <Title style={{ color: "white" }}>
+                            신입 개발자. 홍지윤
+                        </Title>
+                    </Flex>
+                </Header>
                 <Content>
                     <MyContent />
                 </Content>
@@ -35,7 +38,6 @@ export function MyPage() {
                         <Title style={{ color: "white" }}>Contact</Title>
                     </Divider>
                     <Title style={{ color: "white" }}>
-                        {" "}
                         Created by Jiyun Hong
                     </Title>
 

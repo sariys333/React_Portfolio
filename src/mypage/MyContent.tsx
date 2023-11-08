@@ -1,23 +1,30 @@
-import { Card, Col, Divider, Row, Space, Typography } from "antd";
-import { CSSProperties } from "react";
+import { Col, Divider, Row, Space, Typography } from "antd";
 import { BoardHub } from "./BoardHub";
 import { Questor } from "./Questor";
-import { IMG_URL } from "./Constans";
+import { SkillComponent } from "./SkillComponent";
 
-const { Title, Text, Paragraph } = Typography;
+const { Title, Paragraph } = Typography;
 
 export function MyContent() {
-    const cardStyle = {
-        alignItems: "center",
-        display: "flex",
-        width: 100,
-        height: 100,
-    };
-    const imgStyle: CSSProperties = {
-        padding: 3,
-        top: "50%",
-        position: "relative",
-    };
+    const firstRow: string[] = [
+        "java.png",
+        "css.png",
+        "html.png",
+        "js.png",
+        "ts.png",
+        "oracle.png",
+    ];
+
+    const secondRow: string[] = [
+        "nodejs.png",
+        "nestjs.svg",
+        "spring.png",
+        "spring-boot.png",
+        "react.png",
+        "redux.svg",
+    ];
+
+    const thirdRow: string[] = ["aws.png", "github.png", "docker.png"];
 
     return (
         <>
@@ -56,192 +63,9 @@ export function MyContent() {
                     </Divider>
                     <div>
                         <Space direction="vertical">
-                            <Space
-                                style={{
-                                    backgroundColor: "#e7e6e6",
-                                    padding: 10,
-                                }}
-                            >
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/java.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/css.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/html.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/js.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/ts.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/oracle.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                            </Space>
-                            <Space
-                                style={{
-                                    backgroundColor: "#e7e6e6",
-                                    padding: 10,
-                                }}
-                            >
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/nodejs.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/nestjs.svg`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/spring.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/spring-boot.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/react.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/redux.svg`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                            </Space>
-                            <Space
-                                style={{
-                                    backgroundColor: "#e7e6e6",
-                                    padding: 10,
-                                }}
-                            >
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/aws.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/github.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                                <Card
-                                    hoverable
-                                    style={cardStyle}
-                                    bodyStyle={{ display: "none" }}
-                                    cover={
-                                        <img
-                                            src={`${IMG_URL}/docker.png`}
-                                            style={imgStyle}
-                                        />
-                                    }
-                                />
-                            </Space>
+                            <SkillComponent names={firstRow} />
+                            <SkillComponent names={secondRow} />
+                            <SkillComponent names={thirdRow} />
                         </Space>
                     </div>
                 </Col>

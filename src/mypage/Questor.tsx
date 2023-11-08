@@ -1,9 +1,18 @@
 import { Avatar, Card, Flex, Image, Space, Typography } from "antd";
 import { IMG_URL } from "./Constans";
 
-const { Title, Text, Paragraph } = Typography;
+const { Title, Paragraph } = Typography;
 
 export function Questor() {
+    const imgName: string[] = [
+        "ts.png",
+        "react.png",
+        "redux.svg",
+        "nestjs.svg",
+        "aws_dynamodb.png",
+        "aws_ec2.png",
+    ];
+
     return (
         <div style={{ marginBottom: 20 }}>
             <Flex justify="center">
@@ -59,36 +68,13 @@ export function Questor() {
                                 padding: 3,
                             }}
                         >
-                            <Image
-                                src={`${IMG_URL}/ts.png`}
-                                preview={false}
-                                width={50}
-                            />
-                            <Image
-                                src={`${IMG_URL}/react.png`}
-                                preview={false}
-                                width={50}
-                            />
-                            <Image
-                                src={`${IMG_URL}/redux.svg`}
-                                preview={false}
-                                width={50}
-                            />
-                            <Image
-                                src={`${IMG_URL}/nestjs.svg`}
-                                preview={false}
-                                width={50}
-                            />
-                            <Image
-                                src={`${IMG_URL}/aws_dynamodb.png`}
-                                preview={false}
-                                width={50}
-                            />
-                            <Image
-                                src={`${IMG_URL}/aws_ec2.png`}
-                                preview={false}
-                                width={50}
-                            />
+                            {imgName.map((name: string) => (
+                                <Image
+                                    src={`${IMG_URL}/${name}`}
+                                    preview={false}
+                                    width={50}
+                                />
+                            ))}
                         </Space>
                         <Space>
                             <a href="http://3.39.23.102:8080/login">
